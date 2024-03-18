@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dancing Robot</title>
+    <style>
+ body{
+    background-image: linear-gradient( to right, red , yellow) ;
+ }
+
+ .hearing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 89px;
+
+ }
+
+ .left,.right{
+    height: 17px;
+    width: 17px;
+    background-color: rgb(23, 4, 4);
+    border-radius: 50%;
+ }
+
+
+
+ .head{
+    height: 150px;
+    width: 150px;
+    background-color: chartreuse;
+    border-radius: 50% 50% 0 0;
+
+ }
+
+ .lefthd{
+    height: 77px;
+    width: 20px;
+    background-color: chartreuse;
+    border-radius: 40px;
+    margin: 7px;
+    
+ }
+
+ .st{
+    height: 170px;
+    width: 150px;
+    background-color: chartreuse;
+    border-radius: 0 0 40px 40px;
+
+
+ }
+
+ .righthd{
+    height: 77px;
+    width: 20px;
+    background-color: chartreuse;
+    border-radius: 40px;
+    margin: 7px;
+    
+
+ }
+
+ .st:hover{
+    animation: stomach 1s infinite;
+ }
+
+ .righthd:hover{
+    animation: righthand 1s infinite;
+ }
+
+ .lefthd:hover{
+    animation: lefthand 1s infinite;
+ }
+
+
+ .root{
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+    
+ }
+
+ .rightlg,.leftlg{
+    height: 77px;
+    width: 20px;
+    background-color: chartreuse;
+    border-radius: 40px;
+    margin: 7px;
+    margin-top: -28px;
+    margin-left: 25px;
+    margin-right: 20px;
+ }
+
+ .legs{
+    display: flex;
+    justify-content: center;
+ }
+
+
+ @keyframes lefthand {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    25%{
+        transform: rotate(120deg);
+        transform-origin: top;
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-120deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes righthand {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    25%{
+        transform: rotate(120deg);
+        transform-origin: top;
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-120deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes stomach {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+    25%{
+        transform: rotate(10deg);
+        transform-origin: bottom;
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+        transform-origin: bottom;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="body">
+          <div class="hearing">
+            <div class="head">
+              <div class="eyes">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+            </div>
+          </div>
+          <div class="root">
+            <div class="lefthd"></div>
+            <div class="st"></div>
+            <div class="righthd"></div>
+          </div>
+          <div class="legs">
+            <div class="rightlg"></div>
+            <div class="leftlg"></div>
+          </div>
+        </div>
+      </div>    
+</body>
+</html>
